@@ -46,25 +46,7 @@ class Player:
 			elif outputs[3] == 1 and self.posy < (height - self.size - self.speed):
 				self.posy += self.speed
 
-		'''
-		if x_move <= 0.33 and self.posx > self.speed:
-			self.posx += -self.speed
-
-		elif 0.33 < x_move <= 0.66:
-			self.posx = self.posx
-
-		elif 0.66 < x_move and self.posx < (width - self.size - self.speed):
-			self.posx += self.speed
-
-		if y_move <= 0.33 and self.posy > self.speed:
-			self.posy += -self.speed
-
-		elif 0.33 < y_move <= 0.66:
-			self.posy = self.posy
-
-		elif 0.66 < y_move and self.posy < (height - self.size - self.speed):
-			self.posy += self.speed
-		'''
+		
 		self.rect = pygame.Rect(self.posx, self.posy, self.size, self.size)
 
 	def calculation_move(self, outputs, width, height, item):
